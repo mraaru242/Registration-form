@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill Details</title>
+    <link rel="stylesheet" href="sumit.css">
+</head>
+<body>
+    <header>
+        <h1>Fill your details blow</h1>
+    </header>
+
+    <section>
+        <form action="/action.php">
+            <h3>1. Personal Information</h3>
+            <label for="Fullname">Fullname: </label><br>
+            <input type="text" placeholder="(First, Middle, Last)" id="name" name="fullname" required><br>
+            
+            <label for="DOB">DOB:</label><br>
+            <input type="date" id="DOB" name="DOB" required><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male"> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other<br>
+            
+
+            <label for="Nationality">Nationality:</label><br>
+            <input type="text" id="Nationality" name="Nationality" required><br>
+
+            <label for="Religion">Religion:</label><br>
+            <input type="text" id="Religion" name="Religion"><br>
+            
+            <label for="Category">Category</label><br>
+            <select name="Category" id="Category" required>
+                <option value=" ">---Select Category---</option>
+                <option value="General">General</option>
+                <option value="OBC">OBC</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+                <option value="Other">Other</option>
+            </select><br>
+
+            <label for="Aadhar">Aadhar number:</label><br>
+            <input type="text" id="Aadhar" name="Aadhar" required><br>
+           
+            <label for="Phone">Phone no.:</label><br>
+            <input type="tel" id="Phone no." name="Phone no." required><br>
+
+            <label for="Alt Phone">Alternate Phone no.:</label><br>
+            <input type="tel" id="Alt Phone no." name="Alt Phone no."><br>
+
+            <label for="Email">Email.id:</label><br>
+            <input type="email" id="email.id" name="Email.id" required><br>
+
+        <h3>2. Address:-</h3>
+           <label for="permanentAddress">Permanent Address:</label><br>
+           <textarea id="permanentAddress" name="permanentAddress" rows="4" cols="50" required></textarea><br><br>
+
+          <input type="checkbox" id="sameAsPermanent" name="sameAsPermanent">
+          <label for="sameAsPermanent">Current Address is same as Permanent Address</label><br><br>
+
+          <label for="currentAddress">Current Address:</label><br>
+          <textarea id="currentAddress" name="currentAddress" rows="4" cols="50" required></textarea><br>
+
+          <label for="State">State:</label><br>
+          <input type="text" id="State" name="State" required><br>
+
+          <label for="City">City:</label><br>
+          <input type="text" id="City" name="City" required><br>
+
+          <label for="Pincode">Pincode:</label><br>
+          <input type="text" id="Pincode" name="Pincode" required><br>
+
+          <label for="Country">Country:</label><br>
+          <input type="text" id="Country" name="Country" required>
+        
+        <h3>3. Parent/Guardian Information</h3>
+          <label for="Father's Name">Father's Name:</label><br>
+          <input type="text" id="Father's Name" name="Father's Name" required><br>
+
+          <label for="Father's Occupation">Father's Occupation:</label><br>
+          <input type="text" id="Father's Occupation" name="Father's Occupation" required><br>
+
+          <label for="Mother's Name">Mother's Name:</label><br>
+          <input type="text" id="Mother's Name" name="Mother's Name" required><br>
+
+          <label for="Mother's Occupation">Mother's Occupation:</label><br>
+          <input type="text" id="Mother's Occupation" name="Mother's Occupation" required><br>
+
+          <label for="Guardian Name (if different)">Guardian Name (if different):</label><br>
+          <input type="text" id="Guardian Name (if different)" name="Guardian Name (if different)"><br>
+
+          <label for="Parent/Guardian Mobile Number">Parent Mobile Number:</label><br>
+          <input type="tel" id="Parent Mobile Number" name="Parent Mobile Number" required><br>
+
+          <label for="Parent Email">Parent Email:</label><br>
+          <input type="email" id="Parent Email" name="Parent Email"><br>
+
+        <h3> 4. Academic Information</h3>  
+          <label for="Last Qualified Exam">Last Qualified Exam:</label><br>
+          <input type="radio" name="Last Qualified Exam" value="10th">10th <br>
+          <input type="radio" name="Last Qualified Exam" value="12th">12th <br>
+          <input type="radio" name="Last Qualified Exam" value="Diploma">Diploma <br>
+          <input type="radio" name="Last Qualified Exam" value="etc">etc.<br>
+
+          <label for="Board/University Name">Board/University Name:</label><br>
+          <input type="text" id="Board/University Name" name="Board/University Name" ><br>
+
+          <label for="School/College Name">School/College Name:</label><br>
+          <input type="text" id="School/College Name" name="School/College Name"><br>
+
+          <label for="Year of Passing">Year of Passing:</label><br>
+          <input type="year" id="Year of Passing" name="Year of Passing" required><br>
+
+          <label for="Percentage/CGPA">Percentage/CGPA:</label><br>
+          <input type="text" id="Percentage/CGPA" name="Percentage/CGPA" required><br>
+
+          <label for="Stream/Subjects">Stream/Subjects:</label><br>
+          <input type="radio" name="Stream/Subjects" value="Scince">Scince <br>
+          <input type="radio" name="Stream/Subjects" value="art">art <br>
+          <input type="radio" name="Stream/Subjects" value="Commers">Commers<br>
+
+
+          <h3>5. Course & College Details</h3>
+          <label for="Course">Course Applied For:</label><br>
+          <select name="Course" id="Course" required>
+            <option value=" ">---Select Course---</option>
+            <option value="B.Sc">B.Sc</option>
+            <option value="BCA">BCA</option>
+            <option value="B.A">B.A</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="Diploma in AI/ML">Diploma in AI/ML</option>
+            <option value="Diploma in CS">Diploma in CS</option>
+            <option value="Other">Other</option>
+         </select><br><br>
+
+         <label for="stream">Stream / Department:</label><br>
+         <input type="text" id="stream" name="stream" placeholder="e.g., Computer Science, AI&ML" required><br><br>
+
+         <label for="semester">Academic Year / Semester:</label><br>
+         <select id="semester" name="semester" required>
+         <option value="">--Select--</option>
+         <option value="1">1st Semester</option>
+         <option value="2">2nd Semester</option>
+         <option value="3">3rd Semester</option>
+         <option value="4">4th Semester</option>
+         <option value="5">5th Semester</option>
+         <option value="6">6th Semester</option>
+         </select><br><br>
+
+         <label>Mode of Study:</label><br>
+          <input type="radio" id="regular" name="studyMode" value="Regular" required>
+         <label for="regular">Regular</label><br>
+         <input type="radio" id="distance" name="studyMode" value="Distance">
+         <label for="distance">Distance</label><br>
+         <input type="radio" id="parttime" name="studyMode" value="Part-time">
+         <label for="parttime">Part-time</label><br><br>
+
+         <h3> 6: Documents Upload</h3>
+         <label for="Photo">Passport-size Photograph:</label><br>
+         <input type="file" name="Photo" id="Photo" accept="image/*"><br><br>
+
+         <label for="Signature">Signature:</label><br>
+         <input type="file" id="Signature" name="Signature" accept="image/*" required><br><br>
+        
+         <label for="marksheet10">10th Marksheet:</label><br>
+         <input type="file" id="marksheet10" name="marksheet10" required><br><br>
+
+         <label for="marksheet12">12th Marksheet:</label><br>
+         <input type="file" id="marksheet12" name="marksheet12"><br><br>
+
+         <label for="tc">Transfer Certificate (TC):</label><br>
+         <input type="file" id="tc" name="tc"><br><br>
+
+         <label for="migration">Migration Certificate (if applicable):</label><br>
+         <input type="file" id="migration" name="migration"><br><br>
+
+         <label for="caste">Caste Certificate (if applicable):</label><br>
+         <input type="file" id="caste" name="caste"><br><br>
+
+         <label for="aadhar">Aadhar Card / ID Proof:</label><br>
+         <input type="file" id="aadhar" name="aadhar" required><br><br>
+
+         <h3>7. Declaration Section</h3>
+         <input type="checkbox" id="declaration" name="declaration" required>
+         <label for="declaration">
+         I hereby declare that all the information provided is true to the best of my knowledge.
+         </label><br><br>
+
+         <label for="applicantName">Name of Applicant (Digital Signature):</label><br>
+         <input type="text" id="applicantName" name="applicantName" required><br><br>
+
+         <label for="declarationDate">Date:</label><br>
+         <input type="date" id="declarationDate" name="declarationDate" required><br><br>
+
+         <label for="place">Place:</label><br>
+         <input type="text" id="place" name="place" required><br><br>
+
+         
+         <input type="submit" name="submit" id="submit">
+         <input type="reset" name="reset" id="reset">
+
+        </form>
+    </section>
+
+    <!-- <footer>
+         <p>&copy; 2025 Your College Name. All rights reserved.</p>
+         <p>Designed by Munchun Sharma | Contact: munchun841427@gmail.com.com</p>
+    </footer> -->
+    <br><br>
+    <hr>
+
+    <div class="video-card">
+        <h3>Watch video for mind fresh</h3>
+        <iframe width="460" height="280" src="https://www.youtube.com/embed/KKKBaaxH_Jk?si=UE6AgkxsFJJgusLF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        
+        <iframe width="460" height="280" src="https://www.youtube.com/embed/V5En3Ks3OjE?si=UsoY2zyO1TI6eJ7v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="460" height="280" src="https://www.fiverr.com/sellers/smartskillhub_/edit" title="My Fiverr profile" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br><br><br>
+   </div>
+
+   <!-- <div class="footer-icons">
+    <a href="https://www.facebook.com/" target="_blank"><img src="face.jpeg" alt="facebook"></a>
+    <a href="https://www.instagram.com/" target="_blank"><img src="insta.jpeg" alt="instgram"></a>
+    <a href="https://www.linkedin.com/feed/" target="_blank"><img src="logo.jpg.jpg" alt="linkedin"></a>
+   </div> -->
+<footer class="footer-icons">
+    <p>Follow us on</p><br>
+  <a href="https://www.facebook.com/" target="_blank">
+    <img src="face.jpeg" alt="facebook" style="width: 30px; height: 30px;">
+  </a>
+  <a href="https://www.instagram.com/" target="_blank">
+    <img src="insta.jpeg" alt="Instagram" style="width: 30px; height: 30px;">
+  </a>
+  <a href="https://www.linkedin.com/feed/" target="_blank">
+    <img src="logo.jpg.jpg" alt="LinkedIn"style="width: 30px; height: 30px;">
+  </a>
+</footer>
+
+<footer>
+         <p>Made with &hearts; by Munchun</p>
+         <p>&copy; 2025 DSEU Rajokri Campus. All rights reserved.</p>
+         <p>Designed by Munchun Sharma | Contact: munchun841427@gmail.com</p>
+    </footer>
+
+<br><br><hr>
+</body>
+</html>
